@@ -1,15 +1,15 @@
 //
-//  Lesson2Tests.swift
-//  Lesson2Tests
+//  VKTests.swift
+//  VKTests
 //
-//  Created by Лолита Чернышева on 17/08/2019.
+//  Created by Лолита Чернышева on 24/11/2019.
 //  Copyright © 2019 Лолита Чернышева. All rights reserved.
 //
 
 import XCTest
-@testable import Lesson2
+@testable import VK
 
-class Lesson2Tests: XCTestCase {
+class VKTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

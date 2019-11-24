@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsP-4D-l6B">
+                                <rect key="frame" x="0.0" y="35" width="414" height="861"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sF-e7-ztP">
+                                        <rect key="frame" x="155" y="126" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yz8-yj-303">
+                                        <rect key="frame" x="107" y="331" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="d2F-y2-30v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlE-jk-Ovu">
+                                        <rect key="frame" x="185" y="445" width="44" height="30"/>
+                                        <state key="normal" title="Войти"/>
+                                        <connections>
+                                            <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0d6-SD-ugv"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D2h-Wy-GNg">
+                                        <rect key="frame" x="107" y="247" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="8ys-eG-vPE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7sF-e7-ztP" firstAttribute="centerX" secondItem="rsP-4D-l6B" secondAttribute="centerX" id="CQR-gR-Qnb"/>
+                                    <constraint firstItem="VlE-jk-Ovu" firstAttribute="centerX" secondItem="rsP-4D-l6B" secondAttribute="centerX" id="OFD-eX-ahA"/>
+                                    <constraint firstItem="D2h-Wy-GNg" firstAttribute="top" secondItem="7sF-e7-ztP" secondAttribute="bottom" constant="100" id="Pqe-eg-msZ"/>
+                                    <constraint firstItem="Yz8-yj-303" firstAttribute="top" secondItem="D2h-Wy-GNg" secondAttribute="bottom" constant="50" id="dyy-Mi-e4P"/>
+                                    <constraint firstItem="D2h-Wy-GNg" firstAttribute="centerX" secondItem="rsP-4D-l6B" secondAttribute="centerX" id="geq-mA-170"/>
+                                    <constraint firstItem="7sF-e7-ztP" firstAttribute="top" secondItem="rsP-4D-l6B" secondAttribute="top" constant="126" id="iFK-Ch-WGt"/>
+                                    <constraint firstItem="Yz8-yj-303" firstAttribute="centerX" secondItem="rsP-4D-l6B" secondAttribute="centerX" id="oO3-aM-7kx"/>
+                                    <constraint firstItem="VlE-jk-Ovu" firstAttribute="top" secondItem="Yz8-yj-303" secondAttribute="bottom" constant="80" id="qd8-od-EYC"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="lk3-3f-vE7"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="WRD-2a-6Ax"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rsP-4D-l6B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FTp-ml-Aqi"/>
+                            <constraint firstItem="rsP-4D-l6B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g6k-jn-Yvx"/>
+                            <constraint firstAttribute="bottom" secondItem="rsP-4D-l6B" secondAttribute="bottom" id="nyu-mz-Bq0"/>
+                            <constraint firstItem="rsP-4D-l6B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tDO-MZ-Rmu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="authorization" destination="7sF-e7-ztP" id="0y0-zL-msd"/>
+                        <outlet property="login" destination="D2h-Wy-GNg" id="FRv-7m-s11"/>
+                        <outlet property="password" destination="Yz8-yj-303" id="Lt3-Ot-RwO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-817"/>
+        </scene>
+    </scenes>
+</document>
