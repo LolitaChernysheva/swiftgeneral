@@ -15,7 +15,14 @@ class ViewController: UIViewController {
             let passwordInput = password.text else {
                 return
         }
-        print(loginInput + " " + passwordInput)
+        if loginInput == "admin" && passwordInput == "0000" {
+                   print("успешная авторизация")
+                self.performSegue(withIdentifier: "SuccessLogin", sender: nil )
+               } else {
+                   print("неуспешная авторизация")
+               }
+
+        
     }
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var authorization: UILabel!
@@ -29,6 +36,8 @@ class ViewController: UIViewController {
     @objc func hideKeyboard() {
         view.endEditing(true)
     }
+
+
 
 
 }
