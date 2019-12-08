@@ -3,7 +3,12 @@
 import UIKit
 
 class FriendsVC: UITableViewController {
-    var friendList = ["UserOne", "UserTwo", "UserThree", "UserFour"]
+    var friendList = [Friend(userName: "Pavel", avatarPath: "user", isOnline: false),
+                      Friend(userName: "Ivan", avatarPath: "user", isOnline: false),
+                      Friend(userName: "Andrey", avatarPath: "user", isOnline: false),
+                      Friend(userName: "Maria", avatarPath: "user", isOnline: false),
+                      Friend(userName: "Svetlana", avatarPath: "user", isOnline: false),
+                      Friend(userName: "Pavel", avatarPath: "user", isOnline: false)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +25,9 @@ class FriendsVC: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {     //возвращает шаблон данной ячейки
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendTemplate", for: indexPath) as! FriendCell
-        cell.username.text = friendList[indexPath.row]
+        cell.userName.text = friendList[indexPath.row].userName
         return cell
-    }
+        }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        let obj = friendList[indexPath.row]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3DB16BB239D675D00BB92A8 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB16BA239D675D00BB92A8 /* Friend.swift */; };
+		F3DB16BD239D690600BB92A8 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB16BC239D690600BB92A8 /* Group.swift */; };
 		F3DCD7A52392AAA400685EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCD7A42392AAA400685EA4 /* AppDelegate.swift */; };
 		F3DCD7A72392AAA400685EA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCD7A62392AAA400685EA4 /* SceneDelegate.swift */; };
 		F3DCD7A92392AAA400685EA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCD7A82392AAA400685EA4 /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3DB16BA239D675D00BB92A8 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		F3DB16BC239D690600BB92A8 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		F3DCD7A12392AAA400685EA4 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DCD7A42392AAA400685EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3DCD7A62392AAA400685EA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3DB16B6239D514400BB92A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB16BA239D675D00BB92A8 /* Friend.swift */,
+				F3DB16BC239D690600BB92A8 /* Group.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3DB16B7239D519E00BB92A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F3DB16B9239D58E700BB92A8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCD7A82392AAA400685EA4 /* ViewController.swift */,
+				F3DCD7D62392E2E700685EA4 /* GroupsVC.swift */,
+				F3DCD7D42392E2AB00685EA4 /* FriendsVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		F3DCD7982392AAA300685EA4 = {
 			isa = PBXGroup;
 			children = (
@@ -109,14 +139,14 @@
 		F3DCD7A32392AAA400685EA4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F3DB16B9239D58E700BB92A8 /* Screens */,
+				F3DB16B7239D519E00BB92A8 /* UI */,
+				F3DB16B6239D514400BB92A8 /* Model */,
 				F3DCD7A42392AAA400685EA4 /* AppDelegate.swift */,
 				F3DCD7A62392AAA400685EA4 /* SceneDelegate.swift */,
-				F3DCD7A82392AAA400685EA4 /* ViewController.swift */,
 				F3DCD7AA2392AAA400685EA4 /* Main.storyboard */,
 				F3DCD7DC2393181400685EA4 /* PhotoController.swift */,
-				F3DCD7D42392E2AB00685EA4 /* FriendsVC.swift */,
 				F3DCD7DA2393128100685EA4 /* GroupCell.swift */,
-				F3DCD7D62392E2E700685EA4 /* GroupsVC.swift */,
 				F3DCD7AD2392AAA600685EA4 /* Assets.xcassets */,
 				F3DCD7D823930ECA00685EA4 /* FriendCell.swift */,
 				F3DCD7AF2392AAA600685EA4 /* LaunchScreen.storyboard */,
@@ -277,9 +307,11 @@
 				F3DCD7DB2393128100685EA4 /* GroupCell.swift in Sources */,
 				F3DCD7A92392AAA400685EA4 /* ViewController.swift in Sources */,
 				F3DCD7D923930ECB00685EA4 /* FriendCell.swift in Sources */,
+				F3DB16BD239D690600BB92A8 /* Group.swift in Sources */,
 				F3DCD7A52392AAA400685EA4 /* AppDelegate.swift in Sources */,
 				F3DCD7D52392E2AB00685EA4 /* FriendsVC.swift in Sources */,
 				F3DCD7A72392AAA400685EA4 /* SceneDelegate.swift in Sources */,
+				F3DB16BB239D675D00BB92A8 /* Friend.swift in Sources */,
 				F3DCD7DD2393181400685EA4 /* PhotoController.swift in Sources */,
 				F3DCD7D72392E2E700685EA4 /* GroupsVC.swift in Sources */,
 			);
