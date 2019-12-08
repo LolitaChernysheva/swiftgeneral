@@ -19,7 +19,7 @@ class GroupsVC: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupTemplate", for: indexPath) as! GroupCell
-        cell.groupname.text = groupList[indexPath.row]
+        cell.groupName.text = groupList[indexPath.row]
         return cell
     }
 
